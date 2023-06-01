@@ -68,6 +68,10 @@
   --logo-width-max: 200vw;
 }
 
+html{
+  overflow-x: hidden;
+}
+
 body {
 /*   display: flex; */
   align-items: center;
@@ -2278,8 +2282,9 @@ ul.download li a img {
   padding: 1px;
   margin: 1px;
   border: 2px transparent;
-  width: 210vw;
+  width: 120vw;
   position: absolute;
+  top:40vh;
   left: -5vw;
   opacity: 0;
   z-index: 1;
