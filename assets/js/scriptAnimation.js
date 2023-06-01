@@ -53,8 +53,12 @@ function logoAni() {
     zlogo.style.transition= 'transform .8s';
     zlogo.style.transform = 'scale(5.8) translate(1.5vw)';
 
+    let MVlogo = document.getElementById("logoMV");
+    MVlogo.style.opacity = "1";
+    MVlogo.style.transition= "opacity .8s ease 0.5s";
 
     let MV = document.querySelectorAll(".PMV");
+    
 
     MV.forEach((PMV,i)=>{
         PMV.style.opacity = "1";
@@ -76,6 +80,10 @@ function logoAniRev(){
 
     zlogo.style.transition= 'transform .8s';
     zlogo.style.transform = 'scale(0.8) translate(-1.5vw)';
+
+    let MVlogo = document.getElementById("logoMV");
+    MVlogo.style.opacity = "0";
+    MVlogo.style.transition= "opacity .01s ease 0s";
 }
 
 var lastScrollTop = 0;

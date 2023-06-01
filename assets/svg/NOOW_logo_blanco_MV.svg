@@ -11,6 +11,7 @@
    sodipodi:docname="NOOW_logo_blanco.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
   <sodipodi:namedview
@@ -26,14 +27,31 @@
      inkscape:zoom="2.5620932"
      inkscape:cx="267.74982"
      inkscape:cy="120.21421"
-     inkscape:window-width="1920"
-     inkscape:window-height="1000"
-     inkscape:window-x="-11"
-     inkscape:window-y="-11"
+     inkscape:window-width="3072"
+     inkscape:window-height="1648"
+     inkscape:window-x="2293"
+     inkscape:window-y="-874"
      inkscape:window-maximized="1"
      inkscape:current-layer="layer1" />
   <defs
      id="defs985">
+    <rect
+       x="311.85439"
+       y="-82.354537"
+       width="132.31369"
+       height="44.494868"
+       id="rect26442" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect23248"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
     <inkscape:path-effect
        effect="bspline"
        id="path-effect14960"
@@ -124,5 +142,34 @@
        transform="matrix(0.26458333,0,0,0.26458333,1.1141652,1.5032395)"
        id="text6163"
        style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect6165);fill:#000000;fill-opacity:1;stroke:none" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.93889px;line-height:1.25;font-family:sans-serif;letter-spacing:1.32292px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       id="text7425"><textPath
+         xlink:href="#path14958"
+         id="textPath23210"><tspan
+           id="tspan7423"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93889px;font-family:'Acumin Variable Concept';-inkscape-font-specification:'Acumin Variable Concept';fill:#b3b3b2;fill-opacity:1;stroke-width:0.264583">Visión</tspan></textPath></text>
+    <path
+       style="fill:none;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 43.45422,13.998719 c 0.998223,-1.445702 1.996484,-2.89146 3.321847,-4.0446863 1.325363,-1.1532262 2.97776,-2.0138495 4.853097,-2.4375594 1.875338,-0.42371 3.97384,-0.4106817 5.815645,-0.2040883 1.841805,0.2065935 3.426081,0.6065259 5.010801,1.0065704"
+       id="path14958"
+       inkscape:path-effect="#path-effect14960"
+       inkscape:original-d="m 43.45422,13.998719 c 0.998524,-1.445494 1.996787,-2.891251 2.994784,-4.3372739 1.652591,-0.8603222 3.304988,-1.7209455 4.956885,-2.5817107 2.098611,0.013292 4.197113,0.02632 6.295551,0.039085 1.585127,0.4003452 3.169403,0.8002776 4.75417,1.200136"
+       sodipodi:nodetypes="ccccc" />
+    <path
+       style="fill:none;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
+       d="m 91.060962,10.900666 c 1.425974,-1.0316529 2.852057,-2.0633855 4.55627,-2.7691396 1.704212,-0.7057541 3.68562,-1.085283 5.950338,-0.9479972 2.26473,0.1372858 4.81181,0.7912661 6.68784,1.9445627 1.87603,1.1532971 3.08081,2.8055611 4.28539,4.4575541"
+       id="path23246"
+       inkscape:path-effect="#path-effect23248"
+       inkscape:original-d="m 91.060962,10.900666 c 1.42619,-1.0313537 2.852274,-2.063086 4.278269,-3.0952107 1.982271,-0.3793789 3.963679,-0.7589079 5.945309,-1.1387945 2.54771,0.654339 5.09479,1.3083181 7.64186,1.9621001 1.20509,1.6525931 2.40987,3.3048561 3.6144,4.9568851"
+       sodipodi:nodetypes="ccccc" />
+    <text
+       xml:space="preserve"
+       id="text26440"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93889px;line-height:1.25;font-family:'Acumin Variable Concept';-inkscape-font-specification:'Acumin Variable Concept';letter-spacing:1.32292px;white-space:pre;fill:#000000;fill-opacity:1;stroke:none"><textPath
+         xlink:href="#path23246"
+         id="textPath39831"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93889px;font-family:'Acumin Variable Concept';-inkscape-font-specification:'Acumin Variable Concept';fill:#b3b3b2;fill-opacity:1">Misión</textPath></text>
   </g>
 </svg>
