@@ -2247,6 +2247,60 @@ ul.download li a img {
 }
 
 /***********************************************************************************************/
+/* =ZOOM Mision y vision */
+/***********************************************************************************************/
+
+
+#casilla{
+  border:1px;
+  margin: 0;
+  padding: 40vh 20vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-color: var(--azul);
+  
+}
+
+
+/* 3. selectores por ID */
+.logo {
+  padding: 1px;
+  margin: 1px;
+  border: 2px transparent;
+  width: var(--logo-width-min);
+  position: absolute;
+}
+
+.PMV{
+  opacity:0;
+  text-align: center;
+  color: var(--blanco);
+}
+
+
+#misionVision {
+  display: flex;
+  font-size: 1.5vw;
+  padding: 0;
+  margin: 0;
+  border: 1px transparent;
+  
+}
+
+.casillaMV {
+  display: flex;
+  border: 1px transparent;
+  padding: 2vw;
+  margin: auto 12vw;
+  width: 20vw;
+  font-family: 'NOOW';
+  justify-content: center;
+  align-items: center;
+}
+
+/***********************************************************************************************/
 /* =Footer */
 /***********************************************************************************************/
 
