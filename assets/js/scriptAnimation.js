@@ -42,16 +42,17 @@ window.addEventListener("scroll", function(){ // or window.addEventListener("scr
  }, false);
 */
 
- let zlogo = document.getElementById("logo");
+let zlogo = document.getElementById("logo");
 
 let element = document.getElementById("casilla");
 
 
 function logoAni() {
+
     let zlogo = document.getElementById("logo");
 
     zlogo.style.transition= 'transform .8s';
-    zlogo.style.transform = 'scale(5.8) translate(1.5vw)';
+    zlogo.style.transform = 'scale(2.5) translate(0.5vw)';
 
     let MVlogo = document.getElementById("logoMV");
     MVlogo.style.opacity = "1";

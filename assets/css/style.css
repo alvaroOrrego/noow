@@ -399,6 +399,17 @@ p {
 // =Navbar
 *************************************************************************/
 
+@media (max-width: 860px){
+  .navbar-brand img{
+    width: 80px;
+  }
+}
+
+.navbar-brand {
+  width: 150px;
+  padding-top: 20px;
+}
+
 .navbar-default {
   background: #fff;
   border: none;
@@ -473,12 +484,29 @@ p {
 /* =Inicio section */
 /***********************************************************************************************/
 
-#inicio-section {
-/*   position: relative; */
-/*   display: flex; */
-/*   width: 100vw; */
-/*   max-width: 1000px;
-  min-width: 320px; */
+html{overflow-x: hidden}
+
+#inicio-section{
+  margin: auto;
+  flex-direction: column;
+  position: relative;
+  padding: 0;
+/*   height: 100vw;
+  width: 100vw; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--blanco);
+}
+
+/**/
+
+/* #inicio-section {
+  position: relative;
+  display: flex;
+  width: 100vw;
+  max-width: 1000px;
+  min-width: 320px;
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -486,14 +514,14 @@ p {
   justify-content: center;
   margin: auto;
 
-}
+} */
 
-#img1{
+/* #img1{
   position: relative;
   object-fit: cover;
-/*   max-width: 300px;
-  max-height: 300px; */
-}
+  max-width: 300px;
+  max-height: 300px;
+} */
 
 .module-content:before {
   position: absolute;
@@ -509,6 +537,8 @@ p {
 /***********************************************************************************************/
 /* =Mision Vision */
 /***********************************************************************************************/
+
+
 
 #mv-section{
   background-color: #026af0;
@@ -888,6 +918,11 @@ h6.progress-value {
 /* =Contact section*/
 /***********************************************************************************************/
 
+#contact-section .title-section{
+  margin-top: 100px;
+  margin-bottom: 80px;
+}
+
 #contact-section h2{
   color: #000;
 }
@@ -974,8 +1009,8 @@ textarea.form-control {
 ----------------------*/
 
 #features-section {
-  padding: 80px 0!important;
-  padding-bottom: 100px!important;
+  margin-top: 100px;
+  margin-bottom: 80px;
   background-color: var(--blanco)
 }
 
@@ -1063,31 +1098,44 @@ ul.features-list li {
 
 #esp-section{
   background-color: #F7F7F7;
-/*   background-size: cover; */
-/*   background-position: center;
-  background-repeat: no-repeat;
-  background-size: 150vh; */
+}
+
+#esp-section .title-section{
+  margin-top: 100px;
+  margin-bottom: 80px;
 }
 
 #esp-section h2{
   color: var(--negro);
 }
 
-#imgEspOnPremise{
-  object-fit: cover;
-  width: auto;
+
+/** **/
+
+#esp-section2{
+  background-color: #F7F7F7;
 }
 
-#mision-vision-section{
+#esp-section2 .title-section{
+  margin-top: 30px;
+  margin-bottom: 80px;
+}
+
+#esp-section2 h2{
+  color: var(--negro);
+}
+
+/** Especialidades section **/
+
+/* #mision-vision-section{
   background-color: var(--azul);
   background-image: url('../images/hero-bg/bg-noow-azul.jpg');
   background-position: center center;
-/*   min-height: 100vh;
-  min-width: 100vh; */
+  min-height: 100vh;
+  min-width: 100vh;
   background-size: 70vh;
   background-repeat: no-repeat;
   transition: 0.5s;
-/*   overflow: hidden; */
 }
 
 #mision-vision-section:hover{
@@ -1095,17 +1143,17 @@ ul.features-list li {
   background-position: center center;
   background-size: 250vh;
   background-repeat: no-repeat;
-/*   min-height: 100vh;
-  min-width: 100vh; */
-/*   transform:scale(1.2); */
+  min-height: 100vh;
+  min-width: 100vh;
+  transform:scale(1.2);
 }
 
 #img2{
   visibility: hidden;
-/*   position: relative;
+  position: relative;
   transition: 0.5s;
-  object-fit: cover; */
-}
+  object-fit: cover;
+} */
 
 /* #slider{
   display: flex;
@@ -2254,16 +2302,15 @@ ul.download li a img {
 /* =ZOOM Mision y vision */
 /***********************************************************************************************/
 
-
 #casilla{
   border:1px;
   margin: 0;
-  padding: 40vh 20vw;
+  padding: 40vh 0vw;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  background-color: var(--azul);
+  background-color: rgba(2,106,240,255);
   
 }
 
@@ -2276,10 +2323,12 @@ ul.download li a img {
   width: var(--logo-width-min);
   position: absolute;
   z-index: 0;
+  justify-content: center;
+  align-items: center;
 }
 
 .logoMV{
-  padding: 1px;
+/*   padding: 1px;
   margin: 1px;
   border: 2px transparent;
   width: 120vw;
@@ -2287,14 +2336,16 @@ ul.download li a img {
   top:40vh;
   left: -5vw;
   opacity: 0;
-  z-index: 1;
+  z-index: 1; */
+  visibility: hidden;
 }
 
-.PMV{
+/* .PMV{
   opacity:0;
   text-align: center;
+  font-size: 17px;
   color: var(--blanco);
-}
+} */
 
 
 #misionVision {
@@ -2310,11 +2361,50 @@ ul.download li a img {
   display: flex;
   border: 1px transparent;
   padding: 2vw;
-  margin: auto 12vw;
-  width: 20vw;
+  margin: auto 9vw;
+  width: 15vw;
   font-family: 'NOOW';
   justify-content: center;
   align-items: center;
+}
+
+.elementor-shape {
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  line-height: 0;
+  direction: ltr;
+}
+
+#elem0 {
+  fill: var(--blanco);
+  transform-origin: center;
+  transform: rotateY(180deg);
+}
+
+#elem1 {
+  fill: rgba(2,106,240,255);
+  transform-origin: center;
+  transform: rotateY(0deg);
+}
+
+#elem2 {
+  fill: var(--negro);
+  transform-origin: center;
+  transform: rotateY(180deg);
+}
+
+#elem3 {
+  fill: var(--blanco);
+  transform-origin: center;
+  transform: rotateY(0deg);
+}
+
+#elem4 {
+  fill: #F7F7F7;
+  transform-origin: center;
+  transform: rotateY(180deg);
 }
 
 /***********************************************************************************************/
