@@ -487,16 +487,100 @@ p {
 html{overflow-x: hidden}
 
 #inicio-section{
-  margin: auto;
+/*   margin: auto;
   flex-direction: column;
   position: relative;
-  padding: 0;
+  padding: 0; */
 /*   height: 100vw;
   width: 100vw; */
-  display: flex;
+/*   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--blanco);
+  background-color: var(--blanco); */
+}
+
+/** slider inicio **/
+
+.container-slider{
+  margin: auto;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+/*   box-shadow: 0 0 0 10px #fff, 0 15px 50px; */
+  position: relative;
+}
+
+.slider{
+  display: flex;
+  width: 400%; /** modificable segun cantidad de img **/
+  height: 100%;
+  margin-left: -100%;
+}
+
+.slider__section{
+  width: 100%;
+}
+
+.slider__img{
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slider__btn{
+  position: absolute;
+  width: 40px;
+  height: 40px;
+/*   background: rgba(255, 255 ,255, 0.7); */
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 30px;
+  font-weight: bold;
+  font-family: monospace;
+  color: var(--blanco);
+  text-align: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider_btn:hover{
+  background: #fff;
+}
+
+.slider__btn--left{
+  left: 10px;
+}
+
+.slider__btn--right{
+  right: 10px;
+}
+
+@media (max-width: 860px){
+  .slider__btn{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+  /*   background: rgba(255, 255 ,255, 0.7); */
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    font-weight: bold;
+    font-family: monospace;
+    color: var(--blanco);
+    text-align: center;
+/*     border-radius: 50%; */
+    cursor: pointer;
+  }
+
+  .slider__btn--left{
+    left: 5px;
+  }
+  
+  .slider__btn--right{
+    right: 5px;
+  }
+
 }
 
 /**/
@@ -2314,13 +2398,25 @@ ul.download li a img {
   
 }
 
+@media(max-width:860px) {
+  .logo{
+    padding: 1px;
+    margin: 1px;
+    border: 2px transparent;
+    width: 100vw;
+    position: absolute;
+    z-index: 0;
+    justify-content: center;
+    align-items: center;
+  }
+}
 
 /* 3. selectores por ID */
 .logo {
   padding: 1px;
-  margin: 1px;
+  margin-left: 20px;
   border: 2px transparent;
-  width: var(--logo-width-min);
+  width: 100vw;
   position: absolute;
   z-index: 0;
   justify-content: center;
