@@ -1,10 +1,10 @@
 <?php
     $destinatario = 'alvaro.orrego.m@gmail.com';
-    $nombre = $_POST['nombre'];
+    $nombre = $_POST['name'];
 /*     $apellido = $_POST['apellido'];
     $asunto = $_POST['asunto']; */
     $email = $_POST['email'];
-    $mensaje = $_POST['msj'];
+    $mensaje = $_POST['message'];
 
     $header = "Enviado desde el sitio web de NOOW\n" . "Nombre del emisor: " . $nombre . "\nEmail del emisor:\n" . $email;
     $msjCompleto = "Mensaje:\n" . $mensaje . "\nSaluda atentamente: " . $nombre;
