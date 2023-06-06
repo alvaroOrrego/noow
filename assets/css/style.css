@@ -1093,7 +1093,7 @@ textarea.form-control {
 #features-section {
   margin-top: 100px;
   margin-bottom: 80px;
-  background-color: var(--blanco)
+  background-color: var(--blanco);
 }
 
 #features-section h2{
@@ -1101,7 +1101,8 @@ textarea.form-control {
 }
 
 #features-section .title-section {
-  padding-bottom: 80px;
+  padding-top: 20px;
+  padding-bottom: 50px;
 }
 
 #features-section p {
@@ -1119,7 +1120,7 @@ textarea.form-control {
 ul.features-list {
   list-style: none;
   padding: 0;
-  padding-top: 50px;
+/*   padding-top: 50px; */
 }
 
 ul.features-list li {
@@ -1127,6 +1128,7 @@ ul.features-list li {
 }
 
 .iconbox {
+  padding-top: 20px;
   float: left;
   width: 50px;
   height: 50px;
@@ -1139,7 +1141,9 @@ ul.features-list li {
 }
 
 .features-box-content {
-  margin-left: 70px;
+  padding-top: 20px;
+  margin-top: 20px;
+  margin-left: 20px;
 }
 
 .features-box-content h6 {
@@ -2462,6 +2466,10 @@ ul.download li a img {
   align-items: center;
 }
 
+/* .elementor-shape-top{
+  top:-1px;
+} */
+
 .elementor-shape {
   overflow: hidden;
   position: absolute;
@@ -2471,35 +2479,91 @@ ul.download li a img {
   direction: ltr;
 }
 
-#elem0 {
+.elementor-shape svg{
+  display: block;
+  width: calc(100% - 1.3px);
+  position: relative;
+/*   left: 50%; */
+}
+
+svg:not(:root){
+  overflow: hidden;
+}
+
+.elementor-shape .elementor-shape-fill{
+/*   fill: var(--blanco); */
+  transform-origin: center;
+  transform: rotateY(0deg);
+}
+
+/*   #elem0 {
   fill: var(--blanco);
   transform-origin: center;
   transform: rotateY(180deg);
-}
+  } */
 
-#elem1 {
+  #elem1 {
   fill: rgba(2,106,240,255);
   transform-origin: center;
   transform: rotateY(0deg);
-}
+  }
 
-#elem2 {
+  #elem2 {
   fill: var(--negro);
   transform-origin: center;
   transform: rotateY(180deg);
-}
+  }
 
-#elem3 {
+  #elem3 {
   fill: var(--blanco);
   transform-origin: center;
   transform: rotateY(0deg);
-}
+  }
 
-#elem4 {
+  #elem4 {
   fill: #F7F7F7;
   transform-origin: center;
   transform: rotateY(180deg);
+  }
+
+  /** cards servicios **/
+
+#card-section{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
 }
+
+.cards{
+  display: flex;
+}
+
+#cards-section h2{
+  color: var(--negro);
+  text-align: center;
+}
+
+.card{
+  margin: 10px;
+  border: 2px solid var(--gris);
+  flex: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card .content{
+  flex-grow: 1;
+  flex-shrink: 1;
+  text-align: center;
+}
+
+.card .footer{
+  background-color: #026af0;
+  padding: 10px;
+}
+
+  /** **/
 
 /***********************************************************************************************/
 /* =Footer */
