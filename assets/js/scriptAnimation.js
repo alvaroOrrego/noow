@@ -52,7 +52,7 @@ function logoAni() {
     let zlogo = document.getElementById("logo");
 
     zlogo.style.transition= 'transform .8s';
-    zlogo.style.transform = 'scale(1.2) translate(1.2vw)';
+    zlogo.style.transform = 'scale(1.1) translate(1.1vw)';
 
     let MVlogo = document.getElementById("logoMV");
     MVlogo.style.opacity = "1";

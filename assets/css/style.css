@@ -2459,7 +2459,7 @@ ul.download li a img {
     padding: 1px;
     margin: 1px;
     border: 2px transparent;
-    width: 100vw;
+    width: 50vw;
     position: absolute;
     z-index: 0;
     justify-content: center;
@@ -2470,9 +2470,9 @@ ul.download li a img {
 /* 3. selectores por ID */
 .logo {
   padding: 1px;
-  margin-left: 20px;
+/*   margin-left: 20px; */
   border: 2px transparent;
-  width: 100vw;
+  width: 85vw;
   position: absolute;
   z-index: 0;
   justify-content: center;
@@ -2500,7 +2500,7 @@ ul.download li a img {
 } */
 
 
-#misionVision {
+/* #misionVision {
   display: flex;
   font-size: 1.5vw;
   padding: 0;
@@ -2518,7 +2518,7 @@ ul.download li a img {
   font-family: 'NOOW';
   justify-content: center;
   align-items: center;
-}
+} */
 
 /* .elementor-shape-top{
   top:-1px;
