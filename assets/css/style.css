@@ -484,17 +484,8 @@ p {
 /* =Inicio section */
 /***********************************************************************************************/
 
-#inicio-section{
-/*   margin: auto;
-  flex-direction: column;
-  position: relative;
-  padding: 0; */
-/*   height: 100vw;
-  width: 100vw; */
-/*   display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--blanco); */
+*{
+  box-sizing: border-box;
 }
 
 /** slider inicio **/
@@ -872,8 +863,22 @@ transition: 0.5s;
 /* =Team Section */
 /***********************************************************************************************/
 
+#equipo{
+  background-color: var(--negro);
+  background-image: linear-gradient(0deg, #0000 68%, #026af0 32%);
+
+}
+
 #team-section{
   background-color: #000;
+  transform: skewY(5deg);
+/*   border-top: var(--blanco);
+  border-bottom: #026AFF; */
+}
+
+#team-section .container{
+  padding: 20px;
+  transform: skewY(-5deg);
 }
 
 #team-section h3, h2{
@@ -885,12 +890,16 @@ transition: 0.5s;
 }
 
 #team-section .title-section {
-  margin-top: 100px;
+  margin-top: 50px;
   margin-bottom: 80px;
 }
 
 #team-section .title-section, .team-members .magnifier-inner {
   text-align: center;
+}
+
+.team-members{
+  padding-bottom: 50px;
 }
 
 .member-team {
@@ -1090,10 +1099,20 @@ textarea.form-control {
   Features Section
 ----------------------*/
 
-#features-section {
-  margin-top: 100px;
-  margin-bottom: 80px;
+#servicios{
   background-color: var(--blanco);
+  background-image: linear-gradient(0deg, #ffff 68%, #000000 32%);
+}
+
+#features-section {
+/*   margin-top: 100px;
+  margin-bottom: 80px; */
+  background-color: var(--blanco);
+  transform: skewY(-5deg);
+}
+
+#features-section .container{
+  transform: skewY(5deg);
 }
 
 #features-section h2{
@@ -1182,8 +1201,18 @@ ul.features-list li {
 
 /** Especialidades section **/
 
+#esp-1{
+  background-color: #F7F7F7;
+  background-image: linear-gradient(0deg, #F7F7F7 68%, #ffff 32%);
+}
+
 #esp-section{
   background-color: #F7F7F7;
+  transform: skewY(5deg);
+}
+
+#esp-section .container{
+  transform: skewY(-5deg);
 }
 
 #esp-section .title-section{
@@ -1198,8 +1227,18 @@ ul.features-list li {
 
 /** **/
 
+#esp-2{
+  background-color: #F7F7F7;
+  background-image: linear-gradient(0deg, #ffff 68%, #F7F7F7 32%);
+}
+
 #esp-section2{
   background-color: #F7F7F7;
+  transform: skewY(-5deg);
+}
+
+#esp-section2 .container{
+  transform: skewY(5deg);
 }
 
 #esp-section2 .title-section{
@@ -2398,6 +2437,11 @@ ul.download li a img {
 /* =ZOOM Mision y vision */
 /***********************************************************************************************/
 
+#wrapper-1 {
+  background-color: #026af0;
+  background-image: linear-gradient(160deg, #026af0 68%, #ffffff 32%);
+}
+
 #casilla{
   border:1px;
   margin: 0;
@@ -2516,6 +2560,8 @@ svg:not(:root){
   fill: rgba(2,106,240,255);
   transform-origin: center;
   transform: rotateY(0deg);
+  width: 100vw;
+  z-index: 1;
   }
 
   #elem2 {
