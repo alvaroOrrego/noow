@@ -64,8 +64,13 @@
   --blanco: #ffffff;
   --negro: #000000;
   --amarillo: rgb(255,238,81);
+  --blancoOpaco: rgba(255, 255, 255, 0.7);
   --logo-width-min: 30vw;
   --logo-width-max: 200vw;
+
+  
+  --line-border-fill:var(--azul);
+  --line-border-empty:var(--gris);
 }
 
 html{
@@ -1003,6 +1008,223 @@ h6.progress-title {
 
 h6.progress-value {
   float: right;
+}
+
+
+/***********************************************************************************************/
+/* =Pilars section*/
+/***********************************************************************************************/
+#PILARES{
+  background-color: var(--blanco);
+  background-image: linear-gradient(0deg, #ffff 68% var(--gris) 32%);
+}
+
+#PILARES-section{
+  background-color: var(--blanco);
+  transform: skewY(5deg);
+/*   border-top: var(--blanco);
+  border-bottom: #026AFF; */
+}
+
+#PILARES-section h3, h2{
+  color: var(--negro);
+}
+
+
+
+#PILARES-section .container{
+  padding: 20px;
+  transform: skewY(-5deg);
+}
+
+
+.pilares{
+  width: 100vw;
+  height: 15vh;
+  align-items: top;
+  justify-content: center;
+  display: flex;
+  margin: 0px;
+  padding-inline: 3vw;
+  padding-top: 0vh;
+  overflow: hidden;
+  background-color: transparent;
+}
+
+.tituloPilar{
+  background-color: var(--blancoOpaco);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom:0;
+  margin-bottom: 0;
+}
+
+.contenedor{
+  text-align: center;
+  background-color: var(--blanco);
+}
+
+.progresoContenedor{
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: 30px;
+  max-width: 100%;
+  width: 75vw;
+  background-color: transparent;
+}
+
+.progresoContenedor::before{
+  content:"";
+  background-color: var(--line-border-empty);
+  position: absolute;
+  top:50%;
+  left:0px;
+  transform: translateY(-50%);
+  height: 8px;
+  width: 100%;
+  z-index: 0;    
+  transition: 0.4s ease;
+}
+
+.progreso {
+  content:"";
+  background-color:var(--line-border-fill);
+  position:absolute;
+  top:50%;
+  left:0px;
+  transform: translateY(-50%);
+  height:8px;
+  width:0%;
+  z-index: 0;
+  transition: 0.4s ease;
+}
+
+.icons{
+  width: 40px;
+  height: 40px;
+  z-index: 1;
+
+}
+
+.circle{
+  background-color: var(--blanco);
+  color: var(--gris);
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  border:6px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  padding: 0;
+  margin: 0;
+}
+
+.circle.active{
+  color: var(--azul);
+  z-index: 1;
+  padding: 0;
+  margin: 0;
+}
+
+
+button.boton{
+  border: solid var(--line-border-fill);
+  border-width: 0 6px 6px 0;
+  font-family: 'NOOW';
+  padding: 1vh 1vw;
+  margin: 0px 2vw;
+  cursor: pointer;
+  background-color: transparent;
+  align-self: center;
+}
+
+button.boton:focus{
+  outline: 0;
+}
+
+button.boton:active{
+  transform:scale(0.97);
+}
+
+button.boton:disabled{
+  border: solid var(--line-border-empty);
+  cursor: not-allowed;
+  border-width: 0 3px 3px 0;
+}
+
+#anterior{
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+#siguiente{
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+h2.TP{
+  color: var(--gris);
+  border-radius: 5px;
+  text-align: center;
+  align-items: center;
+}
+
+h3.TP1{
+  color: #202020;
+  text-align: center;
+  align-items: center;
+}
+
+.P{
+  display: none;
+  margin: 0;
+  padding: 2vh;
+  align-items: center;
+  justify-content: center;
+  border: solid var(--azul);
+  border-radius: 5px;
+  min-width: 40vw;
+}
+
+.P.show{
+  display: flex;
+  justify-content:center;
+  align-items:flex-end;
+  margin: 0vh;
+  padding: 0vh;
+}
+
+.parrafoPilar{
+  display: flex;
+  visibility: visible;
+  background-color: var(--blancoOpaco);
+  margin: 3vw;
+  padding-inline: 2vw;
+  padding-block: 2vh;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.Pilar{
+  color: var(--azul);
+  display: none;
+  text-align: center;
+  font-size:x-large;
+}
+
+.Pilar.show{
+  display: block;
+  background-color: var(--blancoOpaco);
+  margin: 3vw;
+  padding-inline: 2vw;
+  padding-block: 2vh;
+  align-items: center;
+  justify-content: center;
 }
 
 /***********************************************************************************************/
