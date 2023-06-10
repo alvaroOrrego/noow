@@ -1290,7 +1290,7 @@ ul.features-list li {
 }
 
 .features-box-content {
-  padding-top: 20px;
+/*   padding-top: 20px; */
   margin-top: 20px;
   margin-left: 20px;
 }
@@ -1329,9 +1329,88 @@ ul.features-list li {
   text-align: center;
 }
 
-/** Especialidades section **/
+/** Especialidades-2 section **/
 
-#esp-1{
+/* @media(min-width: 1280px){
+  .esp-grid{
+    padding: 64px 32px 210px;
+  }
+} */
+
+/* .esp-grid{
+  margin: 0 auto;
+  max-width: 950px;
+} */
+
+@media(min-width: 768px){
+  .esp-grid-wrapper{
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: auto;
+  }
+}
+
+@media(min-width: 576px){
+  .esp-grid-wrapper{
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: auto;
+  }
+}
+
+.esp-grid-wrapper{
+  display: grid;
+  margin: 0 auto;
+  grid-gap: 1px;
+  grid-template-columns: 1fr 1fr;
+  background: radial-gradient( ellipse farthest-side at center,
+              rgba(31, 136, 255, 0.6) 0%,
+              rgba(19, 121, 254, 0.4) 70%,
+              rgba(0, 0, 0, 0) 100%,
+              );
+}
+
+.esp-grid-item{
+  margin-bottom: 50px;
+  margin: auto;
+  position: relative;
+  background-color: #fff;
+/*   width: 10vw; */
+/*   height: 10vh; */
+}
+
+.esp-grid-item img{
+  padding: 30px;
+  width: 500px;
+  height: auto;
+  
+}
+
+@media(min-width: 768px){
+  .esp-grid-wrapper-2{
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: auto;
+  }
+}
+
+@media(min-width: 576px){
+  .esp-grid-wrapper-2{
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: auto;
+  }
+}
+
+.esp-grid-wrapper-2{
+  display: grid;
+  margin: 0 auto;
+  grid-gap: 1px;
+  grid-template-columns: 1fr 1fr 1fr;
+  background: radial-gradient( ellipse farthest-side at center,
+              rgba(31, 136, 255, 0.6) 0%,
+              rgba(19, 121, 254, 0.4) 70%,
+              rgba(0, 0, 0, 0) 100%,
+              );
+}
+
+/* #esp-1{
   background-color: #F7F7F7;
   background-image: linear-gradient(0deg, #F7F7F7 68%, #ffff 32%);
 }
@@ -1352,12 +1431,12 @@ ul.features-list li {
 
 #esp-section h2{
   color: var(--negro);
-}
+} */
 
 
 /** **/
 
-#esp-2{
+/* #esp-2{
   background-color: #F7F7F7;
   background-image: linear-gradient(0deg, #ffff 68%, #F7F7F7 32%);
 }
@@ -1388,7 +1467,7 @@ ul.features-list li {
   justify-content: center;
   align-items: center;
   height: 18vh;
-}
+} */
 
 /** Especialidades section **/
 
