@@ -377,6 +377,21 @@ $(document).ready(function($) {
  
     });
 
+    /* ==============================================
+        hover on images
+    =============================================== */
+        
+        $(".esp-grid-img").on('mouseover',(function (e) {    
+            $(this).attr('src', $(this).attr('src').replace('azul', 'blancos'));
+            console.log("entro");
+        }));
+        $(".esp-grid-img").on('mouseout',(function (e) {
+            $(this).attr('src', $(this).attr('src').replace('blancos', 'azul'));
+            console.log("salio");
+        }));
+
+
+
 });
 
 $(window).load(function(){
@@ -432,5 +447,6 @@ $(window).load(function(){
     $("#preloader").delay(600).fadeOut("slow");
 
 });
+
 
 

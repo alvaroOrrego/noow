@@ -1372,7 +1372,7 @@ ul.features-list li {
   margin-bottom: 50px;
   margin: auto;
   position: relative;
-  background-color: #fff;
+  background-color: transparent;
 /*   width: 10vw; */
 /*   height: 10vh; */
 }
