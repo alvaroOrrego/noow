@@ -75,6 +75,33 @@ $(document).ready(function($) {
         }
     });
 
+
+    // scroll to: made in http://jsfiddle.net/36dp03ur/
+    // https://stackoverflow.com/questions/7408100/can-i-change-the-scroll-speed-using-css-or-jquery
+    if (window.addEventListener) window.addEventListener('DOMMouseScroll', wheel, false);
+    window.onmousewheel = document.onmousewheel = wheel;
+
+    function wheel(event) {
+        var delta = 0;
+        if (event.wheelDelta) delta = event.wheelDelta /30;
+        else if (event.detail) delta = -event.detail / 3;
+        
+
+        handle(delta);
+        if (event.preventDefault) event.preventDefault();
+        event.returnValue = false;
+    }
+
+    function handle(delta) {
+        var time = 1000;
+        var distance = 100;
+        
+        $('html, body').stop().animate({
+            scrollTop: $(window).scrollTop() - (distance * delta)
+        }, time );
+    }
+
+
     /* ==============================================
      Bootstrap Tooltip
     =============================================== */
@@ -376,22 +403,19 @@ $(document).ready(function($) {
         itemsDesktopSmall : [979,3]
  
     });
+    
 
-    /* ==============================================
-        hover on images
-    =============================================== */
-        
-/*         $(".esp-grid-img").on('mouseover',(function (e) {    
-            $(this).attr('src', $(this).attr('src').replace('azul', 'blancos'));
-            console.log("entro");
-        }));
-        $(".esp-grid-img").on('mouseout',(function (e) {
-            $(this).attr('src', $(this).attr('src').replace('blancos', 'azul'));
-            console.log("salio");
-        })) */;
+    // scroll
 
+    var secciones = $("section").map(function() {
+        return this.innerHTML;
+    }).get();
 
-
+    $("#button").click(function() {
+        $('html, body').animate({
+            scrollTop: $("#myDiv").offset().top
+        }, 2000);
+    });
 });
 
 $(window).load(function(){
