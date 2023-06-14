@@ -5,8 +5,10 @@ let element = document.getElementById("casilla");
 
 var elem = document.getElementById("logo");
 var idDown = null;
+var idTop = null;
+
   function myMoveDown() {
-  var pos = 0;
+  var pos = 20;
   clearInterval(idDown);
   idDown = setInterval(frameDown, 10);
     function frameDown() {
@@ -103,7 +105,7 @@ window.addEventListener("scroll", function(){ // or window.addEventListener("scr
             myMoveDown();
         //scrolldown
     } else if (st < lastScrollTop) {
-        
+            myMoveDown();
        // upscroll code
     } // else was horizontal scroll
     lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling

@@ -98,12 +98,13 @@ body {
 }
 
 a {
-  color: var(--azul);
+  color: var(--negro);
   -webkit-transition: all .25s ease-in-out;
      -moz-transition: all .25s ease-in-out;
       -ms-transition: all .25s ease-in-out;
        -o-transition: all .25s ease-in-out;
           transition: all .25s ease-in-out;
+  padding: 5px;
 }
 
 a:hover, a:focus {
@@ -1255,23 +1256,25 @@ textarea.form-control {
   background-color: transparent;
   background-image: none;
   border-top-style: none;
-  border-top-width: 0;
+/*   border-top-width: 0; */
   flex-shrink: 2;
   align-items: flex-start;
 }
 
-.areas_full_item.portfolio:hover{
-}
-
 .areas_background{
-/*   width: 100%;
-  height: 100%; */
-/*   background-image: url(https://uploads-ssl.webflow.com/5c827d1…/5f088aa…_strategy2.jpg); */
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background-image: url(https://ca.res.keymedia.com/files/image/iStock-group-person-happy-work.jpg);
   background-position: 50%;
   background-size: cover;
   flex: 0 auto;
   transition: opacity .2s ease-in;
   position: absolute;
+}
+
+.areas_background:hover{
+  opacity: 0.3;
 }
 
 .areas_text_box{
@@ -1422,11 +1425,11 @@ ul.features-list li {
 
 /** Especialidades-2 section **/
 
-/* @media(min-width: 1280px){
+@media(min-width: 1280px){
   .esp-grid{
     padding: 64px 32px 210px;
   }
-} */
+}
 
 .esp-grid{
   background-color: var(--negro);
@@ -1450,20 +1453,31 @@ ul.features-list li {
   }
 }
 
+/* @media(min-width: 280px){
+  .esp-grid-item img{
+    justify-content: center;
+    padding: 30px;
+    margin-left: 0;
+    width: 250px;
+    height: auto;
+  }
+} */
+
 .esp-grid-wrapper{
+  padding-top: 5px;
   display: grid;
   margin: 0 auto;
   grid-gap: 1px;
   grid-template-columns: 1fr 1fr;
-/*   background: radial-gradient(ellipse farthest-side at center, 
-            rgba(255, 103, 31, 0.6) 0%, 
-            rgba(255, 103, 31, 0.4) 70%, 
-            rgba(0, 0, 0, 0) 100%); */
+  background: radial-gradient(ellipse farthest-side at center, 
+            rgba(0, 123, 255, 0.6) 0%, 
+            rgba(19, 102, 255, 0.4) 70%, 
+            rgba(0, 0, 0, 0) 100%);
 }
 
 .esp-grid-item{
-  margin-bottom: 50px;
-  margin: auto;
+/*   margin-bottom: 50px; */
+  margin: 0;
   position: relative;
   background-color: var(--negro);
 /*   width: 10vw; */
@@ -1471,12 +1485,14 @@ ul.features-list li {
 }
 
 .esp-grid-item img{
+  justify-content: center;
   padding: 30px;
-  width: 500px;
+  width: 250px;
   height: auto;
 }
 
 .esp-grid-img{
+/*   margin-left: 250px; */
   opacity: .4;
   transition: opacity 200ms;
 }
@@ -1501,20 +1517,17 @@ ul.features-list li {
 }
 
 .esp-grid-wrapper-2{
+  padding-top: 5px;
   display: grid;
   margin: 0 auto;
   grid-gap: 1px;
   grid-template-columns: 1fr 1fr 1fr;
-  background: radial-gradient( ellipse farthest-side at center,
-              rgba(31, 136, 255, 0.6) 0%,
-              rgba(19, 121, 254, 0.4) 70%,
-              rgba(0, 0, 0, 0) 100%,
-              );
+  background: radial-gradient(ellipse farthest-side at center, 
+            rgba(0, 123, 255, 0.6) 0%, 
+            rgba(19, 102, 255, 0.4) 70%, 
+            rgba(0, 0, 0, 0) 100%);
 }
 
-.esp-grid-item:hover{
-
-}
 
 /* #esp-1{
   background-color: #F7F7F7;
