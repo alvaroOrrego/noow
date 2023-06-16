@@ -98,7 +98,7 @@ body {
 }
 
 a {
-  color: var(--negro);
+  color: var(--azul);
   -webkit-transition: all .25s ease-in-out;
      -moz-transition: all .25s ease-in-out;
       -ms-transition: all .25s ease-in-out;
@@ -1228,8 +1228,12 @@ textarea.form-control {
   Features Section
 ----------------------*/
 
+hr{
+  margin-left: -90px;
+}
+
 .navigation-image-wrapper{
-  width: 100%;
+  width: 100vw;
   height: 50vh;
   min-width: 500px;
   justify-content: center;
@@ -1332,11 +1336,6 @@ textarea.form-control {
   height: 100vh;
   margin: auto;
 /*   transform: skewY(-1.5deg); */
-}
-
-#features-section .container{
-
-/*   transform: skewY(1.5deg); */
 }
 
 #features-section h2{
