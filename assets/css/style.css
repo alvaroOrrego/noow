@@ -772,7 +772,7 @@ p {
     height: 40px;
   /*   background: rgba(255, 255 ,255, 0.7); */
     top: 50%;
-    transform: translateY(-380%);
+/*     transform: translateY(-380%); */
     font-size: 15px;
     font-weight: bold;
     font-family: monospace;
