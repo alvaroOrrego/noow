@@ -446,10 +446,9 @@ p {
   border-bottom: 2px solid #f0f0f0;
 }
 
-/* .container.nav-container{
-  justify-content: space-between;
-  align-items: center;
-} */
+.container.nav-container{
+  width: 100vw;
+}
 
 .navbar.active {
   position: fixed;
