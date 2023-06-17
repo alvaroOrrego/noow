@@ -1336,50 +1336,66 @@ hr{
   align-items: center;
   display: flex;
   margin: auto;
+  background-color: var(--blanco);
+  padding: 3px;
+}
+
+@media(max-aspect-ratio:4/3){
+  .navigation-image-wrapper{display: grid; height: fit-content;}
 }
 
 .areas_full_item{
-  width: 20%;
+  min-width: 20vw;
   height: 100%;
+  background-color: var(--blanco);
+  opacity: 1;
   color: var(--blanco);
   border-top: 1px solid rgba(1, 1, 1, 0.1);
   border-right: 1px solid rgba(0, 0, 0, 0.1);
   flex: 1 2 auto;
   justify-content: center;
-  transition: all .6s cubic-bezier(.19,1,.22,1);
+  transition: all .8s cubic-bezier(.19,1,.22,1);
   display: flex;
   position: relative;
   overflow: hidden;
 }
 
-.areas_full_item.portfolio{
-  background-color: transparent;
-  background-image: none;
-  border-top-style: none;
-/*   border-top-width: 0; */
-  flex-shrink: 2;
-  align-items: flex-start;
+
+
+.areas_full_item:hover *{
+  width: 45vw;
+  opacity: 1;
 }
 
+/*.areas_full_item:hover .areas_background{
+  opacity: 1;
+}*/
+
+/*.areas_full_item.portfolio{
+  width: 30vh;}
+  /*flex-shrink: 2;
+  align-items: flex-start;
+}
+*/
 .areas_background{
-  width: 100%;
+  width: auto;
   height: 100%;
   opacity: 0;
   background-image: url(https://ca.res.keymedia.com/files/image/iStock-group-person-happy-work.jpg);
   background-position: 50%;
   background-size: cover;
-  flex: 0 auto;
-  transition: opacity .2s ease-in;
+  /*mask-image:image(url(https://ca.res.keymedia.com/files/image/iStock-group-person-happy-work.jpg), rgb(11, 99, 134)), linear-gradient(rgb(255, 255, 255), transparent);   flex: auto;*/
+  /*transition: opacity .2s ease-in;*/
   position: absolute;
 }
 
-.areas_background:hover{
+/*.areas_background:hover{
   opacity: 0.3;
-}
+}*/
 
 .areas_text_box{
   z-index: 4;
-  width: 20vw;
+  min-width: 20vw;
   max-width: 400px;
   text-align: center;
   flex-direction: column;
@@ -1390,6 +1406,8 @@ hr{
   padding-right: 14px;
   text-decoration: none;
   display: flex;
+  background-color: var(--blancoOpaco);
+
 }
 
 .areas_tittle.icon{
@@ -1420,8 +1438,11 @@ hr{
   position: relative;
 }
 
-#servicios{
+section#servicios{
   background-color: var(--blanco);
+  min-height: 100vh;
+  height: fit-content;
+  padding: 1px;
 /*   background-image: linear-gradient(0deg, #ffff 68%, #000000 32%); */
 }
 
@@ -1429,7 +1450,7 @@ hr{
 /*   margin-top: 100px;
   margin-bottom: 80px; */
   background-color: var(--blanco);
-  height: 100vh;
+  min-height: 100vh;
   margin: 0 auto;
 /*   transform: skewY(-1.5deg); */
 }
@@ -1528,6 +1549,7 @@ ul.features-list li {
 
 .esp-grid{
   background-color: var(--negro);
+  min-height: fit-content;
 }
 
 .esp-grid h2{
