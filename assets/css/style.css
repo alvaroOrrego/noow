@@ -64,7 +64,7 @@
   --blanco: #ffffff;
   --negro: #000000;
   --amarillo: rgb(255,238,81);
-  --blancoOpaco: rgba(255, 255, 255, 0.7);
+  --blancoOpaco: rgba(255, 255, 255, 0.5);
   --logo-width-min: 30vw;
   --logo-width-max: 200vw;
 
@@ -616,7 +616,7 @@ p {
   overflow: hidden;
 /*   box-shadow: 0 0 0 10px #fff, 0 15px 50px; */
   position: relative;
-  height: 130vh;
+  height: 100vh;
 }
 
 @media(max-width: 420px){
@@ -648,8 +648,9 @@ p {
 .slider__img2{
   display: block;
   width: 100vw;
-  height: 290vh;
+  height: 260vh;
   object-fit: cover;
+  
 }
 
 @media(max-width: 1280px){
@@ -1331,7 +1332,7 @@ hr{
 .navigation-image-wrapper{
   width: 100vw;
   height: 50vh;
-  min-width: 500px;
+/*   min-width: 500px; */
   justify-content: center;
   align-items: center;
   display: flex;
@@ -1350,21 +1351,22 @@ hr{
   background-color: var(--blanco);
   opacity: 1;
   color: var(--blanco);
-  border-top: 1px solid rgba(1, 1, 1, 0.1);
-  border-right: 1px solid rgba(0, 0, 0, 0.1);
+/*   border-top: 1px solid rgba(1, 1, 1, 0.1);
+  border-right: 1px solid rgba(0, 0, 0, 0.1); */
   flex: 1 2 auto;
   justify-content: center;
   transition: all .8s cubic-bezier(.19,1,.22,1);
   display: flex;
   position: relative;
   overflow: hidden;
+  cursor: pointer;
 }
 
-
-
 .areas_full_item:hover *{
-  width: 45vw;
-  opacity: 1;
+  transition: .9s;
+  transform: scale(1.1);
+  width: 55vw;
+/*   opacity: 1; */
 }
 
 /*.areas_full_item:hover .areas_background{
@@ -1380,23 +1382,69 @@ hr{
 .areas_background{
   width: auto;
   height: 100%;
-  opacity: 0;
+  opacity: 0.5;
   background-image: url(https://ca.res.keymedia.com/files/image/iStock-group-person-happy-work.jpg);
   background-position: 50%;
   background-size: cover;
+  background-repeat: no-repeat;
   /*mask-image:image(url(https://ca.res.keymedia.com/files/image/iStock-group-person-happy-work.jpg), rgb(11, 99, 134)), linear-gradient(rgb(255, 255, 255), transparent);   flex: auto;*/
   /*transition: opacity .2s ease-in;*/
   position: absolute;
 }
 
-/*.areas_background:hover{
-  opacity: 0.3;
-}*/
+.areas_background_2{
+  width: auto;
+  height: 100%;
+  opacity: 0.5;
+  background-image: url(https://ca.res.keymedia.com/files/image/iStock-group-person-happy-work.jpg);
+  background-position: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /*mask-image:image(url(https://ca.res.keymedia.com/files/image/iStock-group-person-happy-work.jpg), rgb(11, 99, 134)), linear-gradient(rgb(255, 255, 255), transparent);   flex: auto;*/
+  /*transition: opacity .2s ease-in;*/
+  position: absolute;
+}
+
+.areas_background_3{
+  width: auto;
+  height: 100%;
+  opacity: 0.5;
+  background-image: url(https://ca.res.keymedia.com/files/image/iStock-group-person-happy-work.jpg);
+  background-position: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /*mask-image:image(url(https://ca.res.keymedia.com/files/image/iStock-group-person-happy-work.jpg), rgb(11, 99, 134)), linear-gradient(rgb(255, 255, 255), transparent);   flex: auto;*/
+  /*transition: opacity .2s ease-in;*/
+  position: absolute;
+}
+
+.areas_background_4{
+  width: auto;
+  height: 100%;
+  opacity: 0.5;
+  background-image: url(https://ca.res.keymedia.com/files/image/iStock-group-person-happy-work.jpg);
+  background-position: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /*mask-image:image(url(https://ca.res.keymedia.com/files/image/iStock-group-person-happy-work.jpg), rgb(11, 99, 134)), linear-gradient(rgb(255, 255, 255), transparent);   flex: auto;*/
+  /*transition: opacity .2s ease-in;*/
+  position: absolute;
+}
+
+@media(max-width: 1024px){
+  .areas_full_item:hover *{
+    transition: .9s;
+    transform: scale(1.1);
+    width: 100vw;
+  /*   opacity: 1; */
+  }
+
+}
 
 .areas_text_box{
   z-index: 4;
-  min-width: 20vw;
-  max-width: 400px;
+/*   min-width: 20vw; */
+/*   max-width: 400px; */
   text-align: center;
   flex-direction: column;
   flex: 0 auto;
@@ -1407,12 +1455,11 @@ hr{
   text-decoration: none;
   display: flex;
   background-color: var(--blancoOpaco);
-
 }
 
 .areas_tittle.icon{
   z-index: 0;
-  width: 20%;
+  width: 5vw;
   clear: none;
   object-fit: fill;
   flex: 1;
@@ -1466,6 +1513,18 @@ section#servicios{
 
 #features-section p {
   color: black;
+}
+
+@media(max-width: 720px) {
+  #features-section p{
+    font-size: 7px;
+  }
+}
+
+@media(max-width: 1280px) {
+  #features-section p{
+    font-size: 9px;
+  }
 }
 
 .features-image {
