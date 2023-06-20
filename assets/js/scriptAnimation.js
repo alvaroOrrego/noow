@@ -7,7 +7,7 @@ var elem = document.getElementById("logo");
 var idDown = null;
 var idTop = null;
 
-  function myMoveDown() {
+/*   function myMoveDown() {
   var pos = 20;
   clearInterval(idDown);
   idDown = setInterval(frameDown, 10);
@@ -19,7 +19,7 @@ var idTop = null;
             elem.style.width = pos + 'vw';
             }
         }
-    };
+    }; */
 
 
 /*

@@ -2944,10 +2944,12 @@ ul.download li a img {
 /* =ZOOM Mision y vision */
 /***********************************************************************************************/
 
-/* #wrapper-1 {
-  background-color: #026af0;
-  background-image: linear-gradient(160deg, #026af0 68%, #ffffff 32%);
-} */
+#wrapper-1 {
+  background-color: #026aff;
+/*   background-image: linear-gradient(160deg, #026af0 68%, #ffffff 32%); */
+  overflow: hidden;
+  width: 100vw;
+}
 
 #casilla{
   border:1px;
@@ -2957,7 +2959,7 @@ ul.download li a img {
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  background-color: rgba(2,106,240,255);
+  background-color: #026aff;
   height: 100vh;
   
 }
@@ -2985,6 +2987,7 @@ ul.download li a img {
   z-index: 0;
   justify-content: center;
   align-items: center;
+  width: 100vw;
 }
 
 .logoMV{
