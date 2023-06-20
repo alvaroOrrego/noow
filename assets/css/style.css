@@ -609,6 +609,10 @@ p {
 
 /** slider equipo **/
 
+#carrusel2{
+  background-color: var(--negro);
+}
+
 .container-slider2{
   margin: auto;
 /*   width: 100vw; */
@@ -1607,7 +1611,7 @@ ul.features-list li {
 }
 
 .esp-grid{
-  background-color: var(--negro);
+  background-color: rgba(24,28,37,255);
   min-height: fit-content;
 }
 
@@ -1658,7 +1662,7 @@ ul.features-list li {
   align-items: center;
   margin: 0;
   position: relative;
-  background-color: var(--negro);
+  background-color: rgba(24,28,37,255);
 /*   width: 10vw; */
 /*   height: 10vh; */
 }
