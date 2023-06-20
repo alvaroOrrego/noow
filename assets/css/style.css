@@ -844,7 +844,7 @@ p {
   overflow: hidden;
 }
 
-#mv-section:hover{
+/*#mv-section:hover{*/
 /*   background-image: url('../images/hero-bg/bg-mision-vision.png'); */
 /*   background-position: center center;
   background-size: 100vh;
@@ -853,7 +853,7 @@ p {
   min-width: 100vh; */
 /*   transform:scale(1.2); */
   /* overflow: hidden; */
-}
+/*}*/
 
 #mv-section img{
 /*   visibility: hidden; */
