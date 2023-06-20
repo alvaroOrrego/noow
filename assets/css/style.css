@@ -610,7 +610,7 @@ p {
 /** slider equipo **/
 
 #carrusel2{
-  background-color: var(--negro);
+  background-color: rgba(24,28,37,255);
 }
 
 .container-slider2{
