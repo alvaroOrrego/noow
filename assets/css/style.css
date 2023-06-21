@@ -1594,8 +1594,24 @@ section#pilares{
 #features-section h2{
   color: var(--negro);
 /*   margin-top: 20px; */
-  margin-bottom: 15px;
+/*   margin-bottom: -45px; */
   padding-top: 30px;
+}
+
+/* @media(max-width: 390px){
+  #features-section h2{
+    color: var(--negro);
+    margin-bottom: -25px;
+    padding-top: 30px;
+  }
+} */
+
+@media(max-width: 1024px){
+  #features-section h2{
+    color: var(--negro);
+/*     margin-bottom: 15px; */
+    padding-top: 30px;
+  }
 }
 
 #features-section .title-section {
@@ -1704,9 +1720,13 @@ ul.features-list li {
   }
 }
 
-.esp-grid{
+#especialidades{
   background-color: rgba(24,28,37,255);
   min-height: fit-content;
+}
+
+#esp-section{
+  background-color: rgba(24,28,37,255);
 }
 
 .esp-grid h2{
