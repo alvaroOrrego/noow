@@ -21,7 +21,6 @@ var idTop = null;
         }
     }; */
 
-
 /*
 function logoAni() {
 
