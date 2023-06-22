@@ -1584,6 +1584,13 @@ h6.progress-value {
     margin-left: 10px;
     margin-right: 10px;
   }
+  .contenedor-bg-contacto{
+    padding: 20px;
+    background-color: var(--color-bgImgSocios);
+    opacity: 0.85;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
 }
 
 .contenedor-contacto{
