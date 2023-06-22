@@ -94,6 +94,7 @@ $(document).ready(function($) {
 		// Do our DOM lookups beforehand
 		var nav_container = $("header");
 		var nav = $(".navbar");
+		let menu = document.getElementById("menu") 
 		
 		var top_spacing = 0;
 		var waypoint_offset = 0;
@@ -101,9 +102,10 @@ $(document).ready(function($) {
 		nav_container.waypoint({
 			handler: function(direction) {
 				if (direction == 'down') {
-	
+					
 					nav.stop().addClass("active").css("top",-nav.outerHeight()).animate({"top":top_spacing});
 					//nav_container.stop().addClass("active").css("top",-nav.outerHeight()).animate({"top":top_spacing});
+					
 					
 				} else {
 					

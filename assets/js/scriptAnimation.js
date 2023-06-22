@@ -101,10 +101,10 @@ window.addEventListener("scroll", function(){ // or window.addEventListener("scr
     var st = window.pageYOffset || document.documentElement.scrollTop; // Credits: "https://github.com/qeremy/so/blob/master/so.dom.js#L426"
     var inViewNow = this.window.pageYOffset;
     if (st > lastScrollTop) {
-            myMoveDown();
+/*             myMoveDown(); */
         //scrolldown
     } else if (st < lastScrollTop) {
-            myMoveDown();
+/*             myMoveDown(); */
        // upscroll code
     } // else was horizontal scroll
     lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling

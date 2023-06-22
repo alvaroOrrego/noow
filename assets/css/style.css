@@ -467,7 +467,7 @@ p {
 } */
 
 .navbar-default {
-  background: #fff;
+  background: var(--blanco);
   border: none;
   width: 100%;
   margin-bottom: 0;
@@ -488,9 +488,10 @@ p {
 }
 
 .navbar.active {
+  background-color: rgba(255, 255, 255, 0.595);
   position: fixed;
   opacity: 0.95;
-  border: 1px solid #E8E8E8;
+/*   border: 1px solid #E8E8E8; */
 }
 
 .navbar-nav {
@@ -585,6 +586,24 @@ p {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+@media (max-width: 860px){
+  .container-slider{
+    margin: auto;
+    width: 50vh;
+    height: 80vh;
+    max-width: 100%;
+    overflow: hidden;
+  /*   box-shadow: 0 0 0 10px #fff, 0 15px 50px; */
+    position: relative;
+  }
+  .slider__img{
+    display: block;
+    width: 50vh;
+    height: 80vh;
+    object-fit: cover;
+  }
 }
 
 .slider__btn{
@@ -1563,7 +1582,8 @@ h6.progress-value {
 }
 
 .contenedor-bg-contacto{
-  padding: 20px;
+  padding-top: 20px;
+  padding-left: 20px;
   background-color: var(--color-bgImgSocios);
   opacity: 0.85;
   border-radius: 10px;
@@ -1774,7 +1794,7 @@ input.w-button{
   cursor: pointer;
   background-color: #000;
   border-style: none;
-  margin-top: 25px;
+  margin-top: 15px;
   margin-bottom: 5px;
   padding: 5px 17px 5px 22px;
   font-family: Arial, Helvetica, sans-serif;
