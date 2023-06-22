@@ -65,6 +65,7 @@
   --negro: #000000;
   --amarillo: rgb(255,238,81);
   --blancoOpaco: rgba(255, 255, 255, 0.5);
+  --color-bgImgSocios: rgba(24,28,37,255);
   --logo-width-min: 30vw;
   --logo-width-max: 200vw;
 
@@ -583,7 +584,7 @@ p {
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 .slider__btn{
@@ -643,6 +644,283 @@ p {
 }
 
 /**/
+
+/** seccion nosotros **/
+
+.container-nosotros{
+  min-height: 94vh;
+  background-color: #F7F7F7;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.sub-container-nosotros{
+  grid-column-gap: 0px;
+  grid-template-rows: auto;
+}
+
+.layout-grid{
+  grid-row-gap: 16px;
+  grid-column-gap: 16px;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-columns: 1fr;
+  display: grid;
+}
+
+@media screen and (max-width: 767px){
+  .sub-container-nosotros{
+    grid-template-columns: 1fr;
+  }
+} 
+
+#texto-nosotros-left{
+  align-self: center;
+  justify-self: center;
+}
+
+.nosotros-left-1{
+  min-height: 94vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  display: flex;
+}
+
+#container-p-left{
+  opacity: 1;
+  transform: translate3d(0px, 0px, 0px) scale3d(1 ,1 ,1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+}
+
+.container-p-left{
+  background-color: #F7F7F7;
+  margin-left: 40px;
+  margin-right: 40px;
+  display: block;
+  position: relative;
+}
+
+@media screen and (max-width: 479px){
+  .nosotros-left{
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 767px){
+  .nosotros-left{
+    min-height: auto;
+  }
+}
+
+.paragraph.large-paragraph{
+  max-width: 55ch;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.paragraph{
+  color: var(--negro);
+  letter-spacing: .03em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+}
+
+.button-contact{
+  color: var(--blanco);
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  cursor: pointer;
+  background-color: #026af0;
+  border-style: none;
+  margin-top: 25px;
+  margin-bottom: 5px;
+  padding: 5px 17px 5px 22px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  line-height: 20px;
+  text-decoration: none;
+  transition: opacity .3s;
+}
+
+.button-contact:hover{
+  background-color: var(--negro);
+  color: var(--blanco);
+}
+
+.w-button{
+  border: 0;
+  border-radius: 0;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+#img-socio-nosotros-right{
+  align-self: stretch;
+  justify-content: stretch;
+}
+
+.nosotros-right{
+  min-height: 100vh;
+  background-image: url('../images/team/img-seba.jpg');
+/*   background-position: 50%; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+@media screen and (max-width: 767px){
+  #img-socio-nosotros-right{
+    order: -9999;
+  }
+}
+
+@media screen and (max-width: 479px){
+  .nosotros-right{
+    min-height: 300px;
+  }
+}
+
+@media screen and (max-width: 1024px){
+  .nosotros-right{
+    min-height: 450px;
+    background-position: 50% 30%;
+  }
+}
+
+/** parte 2 nosotros (2do socio) **/
+
+.layout-grid-2{
+  grid-row-gap: 16px;
+  grid-column-gap: 16px;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-columns: 1fr;
+  display: grid;
+}
+
+.sub-container-nosotros-2{
+  grid-column-gap: 0px;
+  grid-template-rows: auto;
+}
+
+@media screen and (max-width: 767px){
+  .sub-container-nosotros-2{
+    grid-template-columns: 1fr;
+  }
+} 
+
+.nosotros-left-2{
+  min-height: 100vh;
+  background-image: url('../images/team/img-luis.jpg');
+/*   background-position: 50%; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+#img-socio-nosotros-left-2{
+  align-self: stretch;
+  justify-content: stretch;
+}
+
+#texto-nosotros-right-2{
+  align-self: center;
+  justify-self: center;
+}
+
+.nosotros-right-2{
+  min-height: 94vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  display: flex;
+}
+
+#container-p-right-2{
+  opacity: 1;
+  transform: translate3d(0px, 0px, 0px) scale3d(1 ,1 ,1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+}
+
+.container-p-right-2{
+  background-color: #F7F7F7;
+  margin-left: 40px;
+  margin-right: 40px;
+  display: block;
+  position: relative;
+}
+
+.w-button-2{
+  border: 0;
+  border-radius: 0;
+  display: inline-block;
+}
+
+@media screen and (max-width: 767px){
+  #img-socio-nosotros-left-2{
+    order: -9999;
+  }
+}
+
+@media screen and (max-width: 479px){
+  .nosotros-left-2{
+    min-height: 300px;
+  }
+}
+
+@media screen and (max-width: 1024px){
+  .nosotros-left-2{
+    min-height: 450px;
+    background-position: 50% 30%;
+  }
+}
+
+/** fin parte 2 nosotros (2do socio) **/
+
+/** parte 3 nosotros (3er socio) **/
+
+.nosotros-right-3{
+  min-height: 100vh;
+  background-image: url('../images/team/img-socio3.jpg');
+/*   background-position: 50%; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+#img-socio-nosotros-right-3{
+  align-self: stretch;
+  justify-content: stretch;
+}
+
+@media screen and (max-width: 767px){
+  #img-socio-nosotros-right-3{
+    order: -9999;
+  }
+}
+
+@media screen and (max-width: 479px){
+  .nosotros-right-3{
+    min-height: 300px;
+  }
+}
+
+@media screen and (max-width: 1024px){
+  .nosotros-right-3{
+    min-height: 450px;
+    background-position: 50% 30%;
+  }
+}
+
+/** fin parte 3 nosotros (3er socio) **/
+
+/** fin seccion nosotros **/
 
 /** slider equipo **/
 
@@ -1379,7 +1657,7 @@ hr{
   align-items: center;
   display: flex;
   margin: 0 auto;
-  background-color: var(--gris);
+  background-color: #F7F7F7;
   padding: 3px;
 }
 
@@ -1390,7 +1668,7 @@ hr{
 .areas_full_item{
   min-width: 20vw;
   height: 80vh;
-  background-color: var(--gris);
+  background-color: #F7F7F7;
   opacity: 1;
   color: var(--blanco);
 /*   border-top: 1px solid rgba(1, 1, 1, 0.1);
@@ -1426,7 +1704,7 @@ hr{
   .areas_full_item{
     min-width: 20vw;
     height: 30vh;
-    background-color: var(--gris);
+    background-color: #F7F7F7;
     opacity: 1;
     color: var(--blanco);
   /*   border-top: 1px solid rgba(1, 1, 1, 0.1);
@@ -1445,7 +1723,7 @@ hr{
   .areas_full_item{
     min-width: 20vw;
     height: 20vh;
-    background-color: var(--gris);
+    background-color: #F7F7F7;
     opacity: 1;
     color: var(--blanco);
   /*   border-top: 1px solid rgba(1, 1, 1, 0.1);
@@ -1542,7 +1820,7 @@ hr{
   padding-right: 14px;
   text-decoration: none;
   display: flex;
-  background-color: #b3b3b2c3;
+  background-color: #f7f7f799;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -1575,7 +1853,7 @@ hr{
 }
 
 section#pilares{
-  background-color: var(--gris);
+  background-color: #F7F7F7;
   min-height: 100vh;
   height: fit-content;
   padding: 1px;
@@ -1585,7 +1863,7 @@ section#pilares{
 #features-section {
 /*   margin-top: 100px;
   margin-bottom: 80px; */
-  background-color: var(--gris);
+  background-color: #F7F7F7;
   min-height: 100vh;
   margin: 0 auto;
 /*   transform: skewY(-1.5deg); */
