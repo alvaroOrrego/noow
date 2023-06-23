@@ -274,7 +274,7 @@ $(document).ready(function($) {
         Google Map
     =============================================== */
 
-        var mapLocation = new google.maps.LatLng(34.031428,-118.2071542,17);
+/*         var mapLocation = new google.maps.LatLng(34.031428,-118.2071542,17);
         var $mapis = $('#map');
         if ($mapis.length > 0) {
             var map;
@@ -299,7 +299,7 @@ $(document).ready(function($) {
                     content: '<p><strong>Visia</strong><br/>121 Somewhere Ave, Suite 123<br/>P: (123) 456-7890<br/>Australia</p>'
                 }
             });
-        }
+        } */
 
     /* ==============================================
      BX-Project Slider
