@@ -1968,7 +1968,20 @@ hr{
 /*   margin-bottom: 50px; */
 }
 
-@media(max-width: 1024px){
+@media only screen and (max-width: 1024px){
+  .navigation-image-wrapper{
+    width: 100vw;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 0 auto;
+    padding: 3px;
+  }
+}
+
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+  /* Agrega aquí los estilos específicos para el iPhone X, XS, 11 Pro y 12 Pro */
   .navigation-image-wrapper{
     width: 100vw;
     height: 50vh;
@@ -1978,15 +1991,10 @@ hr{
     display: flex;
     margin: 0 auto;
     padding: 3px;
-    background-color: radial-gradient(ellipse farthest-side at center, 
-                    rgba(24,28,37, 1) 50%, 
-                    rgba(55, 70, 103, 0.4) 70%, 
-                    rgba(0, 0, 0, 0) 100%);
   }
 }
 
-
-@media(max-aspect-ratio:4/3){
+@media only screen and (max-aspect-ratio:4/3){
   .navigation-image-wrapper{display: grid; height: fit-content;}
 }
 
@@ -2010,6 +2018,29 @@ hr{
   margin: 1px;
 }
 
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+  /* Agrega aquí los estilos específicos para el iPhone X, XS, 11 Pro y 12 Pro */
+  .areas_full_item{
+    min-width: 20vw;
+    width: 100vw;
+    height: 80vh;
+    background-color: var(--blanco);
+    opacity: 1;
+    color: var(--blanco);
+  /*   border-top: 1px solid rgba(1, 1, 1, 0.1);
+    border-right: 1px solid rgba(0, 0, 0, 0.1); */
+  /*   flex: 1 2 auto; */
+    justify-content: center;
+    transition: all .8s cubic-bezier(.19,1,.22,1);
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 3%;
+    margin: 1px;
+  }
+}
+
 /* @media(max-width: 780px){
   .areas_full_item{
     min-width: 20vw;
@@ -2027,7 +2058,7 @@ hr{
   }
 } */
 
-@media(max-width: 1020px){
+@media only screen and (max-width: 1020px){
   .areas_full_item{
     min-width: 20vw;
     width: 100vw;
@@ -2037,7 +2068,7 @@ hr{
     color: var(--blanco);
   /*   border-top: 1px solid rgba(1, 1, 1, 0.1);
     border-right: 1px solid rgba(0, 0, 0, 0.1); */
-    flex: 1 2 auto;
+/*     flex: 1 2 auto; */
     justify-content: center;
     transition: all .8s cubic-bezier(.19,1,.22,1);
     display: flex;
@@ -2049,7 +2080,7 @@ hr{
   }
 }
 
-@media(min-height: 1366px){
+@media only screen and (min-height: 1366px){
   .areas_full_item{
     min-width: 20vw;
     height: 20vh;
