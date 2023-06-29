@@ -2374,7 +2374,7 @@ ul.features-list li {
   position: relative;
   background-color: rgba(24,28,37,255);
 /*   width: 10vw; */
-/*   height: 10vh; */
+  height: 18vh;
 }
 
 .esp-grid-item img{
