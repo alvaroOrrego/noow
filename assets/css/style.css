@@ -1952,7 +1952,7 @@ hr{
 }
 
 .navigation-image-wrapper{
-  width: 100vw;
+  width: 99vw;
   height: 50vh;
 /*   min-width: 500px; */
   justify-content: center;
@@ -1972,20 +1972,6 @@ hr{
   .navigation-image-wrapper{
     width: 100vw;
     height: 50vh;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    margin: 0 auto;
-    padding: 3px;
-  }
-}
-
-@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
-  /* Agrega aquí los estilos específicos para el iPhone X, XS, 11 Pro y 12 Pro */
-  .navigation-image-wrapper{
-    width: 100vw;
-    height: 50vh;
-  /*   min-width: 500px; */
     justify-content: center;
     align-items: center;
     display: flex;
@@ -2015,30 +2001,7 @@ hr{
   overflow: hidden;
   cursor: pointer;
   border-radius: 3%;
-  margin: 1px;
-}
-
-@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
-  /* Agrega aquí los estilos específicos para el iPhone X, XS, 11 Pro y 12 Pro */
-  .areas_full_item{
-    min-width: 20vw;
-    width: 100vw;
-    height: 80vh;
-    background-color: var(--blanco);
-    opacity: 1;
-    color: var(--blanco);
-  /*   border-top: 1px solid rgba(1, 1, 1, 0.1);
-    border-right: 1px solid rgba(0, 0, 0, 0.1); */
-  /*   flex: 1 2 auto; */
-    justify-content: center;
-    transition: all .8s cubic-bezier(.19,1,.22,1);
-    display: flex;
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
-    border-radius: 3%;
-    margin: 1px;
-  }
+  margin: 0.5px;
 }
 
 /* @media(max-width: 780px){
@@ -2061,8 +2024,8 @@ hr{
 @media only screen and (max-width: 1020px){
   .areas_full_item{
     min-width: 20vw;
-    width: 100vw;
-    height: 30vh;
+    width: 99vw;
+    height: 29vh;
     background-color: var(--blanco);
     opacity: 1;
     color: var(--blanco);
@@ -2076,7 +2039,7 @@ hr{
     overflow: hidden;
     cursor: pointer;
     border-radius: 0%;
-    margin: 1px;
+    margin: 0.5px;
   }
 }
 
@@ -2096,7 +2059,7 @@ hr{
     position: relative;
     overflow: hidden;
     cursor: pointer;
-    margin: 1px;
+/*     margin: 1px; */
   }
 }
 
