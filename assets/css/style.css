@@ -1979,7 +1979,7 @@ hr{
     align-items: center;
     display: flex;
     margin: 150px auto;
-    padding-top: 50px;
+    padding-top: 0px;
   /*   background: radial-gradient(ellipse farthest-side at center, 
               rgba(24,28,37, 1) 50%, 
               rgba(55, 70, 103, 0.4) 70%, 
@@ -1999,7 +1999,7 @@ hr{
     align-items: center;
     display: flex;
     margin: 0px auto;
-    padding-top: 50px;
+    padding-top: 0px;
   /*   background: radial-gradient(ellipse farthest-side at center, 
               rgba(24,28,37, 1) 50%, 
               rgba(55, 70, 103, 0.4) 70%, 
