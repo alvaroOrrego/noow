@@ -3,7 +3,7 @@ $(document).ready(function() {
     function checkWindowSize() {
       var windowWidth = $(window).width();
       
-      if (windowWidth < 860) {
+      if (windowWidth < 1025) {
         $('.slider__img').hide();
         $('.slider__img-mobile').show();
       } else {
