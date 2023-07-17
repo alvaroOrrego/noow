@@ -2046,7 +2046,7 @@ hr{
 }
 
 #pilar1{
-  width: auto;
+/*   width: auto; */
   background-image: url(../images/pilares/adn.png);
   background-position: 50%;
   background-size: cover;
@@ -2060,7 +2060,7 @@ hr{
 }
 
 #pilar2{
-  width: auto;
+/*   width: auto; */
   background-image: url(../images/pilares/automatizacion.png);
   background-position: 50%;
   background-size: cover;
@@ -2074,7 +2074,7 @@ hr{
 }
 
 #pilar3{
-  width: auto;
+/*   width: auto; */
   background-image: url(../images/pilares/eficiencia.png);
   background-position: 50%;
   background-size: cover;
@@ -2088,7 +2088,7 @@ hr{
 }
 
 #pilar4{
-  width: auto;
+/*   width: auto; */
   background-image: url(../images/pilares/innovacion.png);
   background-position: 50%;
   background-size: cover;
@@ -2105,7 +2105,7 @@ hr{
   .areas_full_item{
     min-width: 20vw;
     width: 100vw;
-    height: 29vh;
+    height: 40vh;
     background-color: var(--blanco);
     opacity: 1;
     color: var(--blanco);
@@ -2144,7 +2144,7 @@ hr{
 
 @media only screen and (min-height: 1366px){
   .areas_full_item{
-    min-width: 20vw;
+/*     min-width: 20vw; */
     height: 20vh;
     background-color: var(--blanco);
     opacity: 1;
@@ -2238,7 +2238,7 @@ hr{
 .areas_text_box{
   z-index: 4;
   min-width: 20vw;
-  min-height: 27vh;
+/*   min-height: 27vh; */
 /*   max-width: 400px; */
   text-align: center;
   flex-direction: column;
