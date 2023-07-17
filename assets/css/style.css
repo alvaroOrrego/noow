@@ -62,10 +62,14 @@
   --azul: #026aff;
   --gris: #B3B3B2;
   --blanco: #ffffff;
+  --blancoPilares: rgba(255, 255, 255, 0.5);
+  --blancoPilares2: rgba(255, 255, 255, 0.8);
   --negro: #000000;
   --amarillo: rgb(255,238,81);
+  --amarilloPilares: rgba(250, 237, 123, 0.65);
   --blancoOpaco: rgba(255, 255, 255, 0.5);
   --color-bgImgSocios: rgba(24,28,37,255);
+  --grisPilares: rgba(66,66,66,255);
   --logo-width-min: 30vw;
   --logo-width-max: 200vw;
 
@@ -90,6 +94,7 @@ body {
   -webkit-font-smoothing: antialiased;
   padding-top: 68px;
   position: relative;
+  background-color: var(--color-bgImgSocios);
 }
 
 .container{
@@ -225,7 +230,7 @@ p {
 /*   padding-bottom: 150px; */
   padding-left: 30px;
   padding-right: 30px;
-  background-color: var(--color-bgImgSocios);
+  background-color: var(--grisPilares);
   border-radius: 2px;
   margin-top: -52px;
 }
@@ -1897,6 +1902,7 @@ textarea.form-control {
 .contact-info {
   text-align: center;
   border-top: 1px solid #EEEEEE;
+  background-color: var(--blanco);
 }
 
 .contact-info a {
@@ -2010,18 +2016,6 @@ hr{
   }
 }
 
-/* @media only screen and (max-width: 1024px){
-  .navigation-image-wrapper{
-    width: 100vw;
-    height: 50vh;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    margin: 0 auto;
-    padding: 3px;
-  }
-} */
-
 @media only screen and (max-aspect-ratio:4/3){
   .navigation-image-wrapper{display: grid; height: fit-content;}
 }
@@ -2030,20 +2024,81 @@ hr{
   min-width: 20vw;
 /*   width: 100vw; */
   height: 80vh;
-  background-color: var(--blanco);
+/*   background-color: var(--blanco); */
   opacity: 1;
   color: var(--blanco);
-/*   flex: 1 2 auto; */
+  flex: 1 2 auto;
   justify-content: center;
   transition: all .8s cubic-bezier(.19,1,.22,1);
   display: flex;
   position: relative;
   overflow: hidden;
   cursor: pointer;
-/*   border-radius: 1%;
-  margin: 0.5px; */
-  border-style: double;
-  border-color: var(--color-bgImgSocios);
+/*   border-radius: 1%; */
+/*   margin: 0.5px; */
+  border-style: ridge;
+  border-color: var(--amarilloPilares);
+  width: auto;
+/*   background-image: url(../images/pilares/adn.png); */
+  background-position: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#pilar1{
+  width: auto;
+  background-image: url(../images/pilares/adn.png);
+  background-position: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all .8s cubic-bezier(.19,1,.22,1);
+  overflow: hidden;
+}
+
+#pilar1:hover{
+  background: none;
+}
+
+#pilar2{
+  width: auto;
+  background-image: url(../images/pilares/automatizacion.png);
+  background-position: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all .8s cubic-bezier(.19,1,.22,1);
+  overflow: hidden;
+}
+
+#pilar2:hover{
+  background: none;
+}
+
+#pilar3{
+  width: auto;
+  background-image: url(../images/pilares/eficiencia.png);
+  background-position: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all .8s cubic-bezier(.19,1,.22,1);
+  overflow: hidden;
+}
+
+#pilar3:hover{
+  background: none;
+}
+
+#pilar4{
+  width: auto;
+  background-image: url(../images/pilares/innovacion.png);
+  background-position: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all .8s cubic-bezier(.19,1,.22,1);
+  overflow: hidden;
+}
+
+#pilar4:hover{
+  background: none;
 }
 
 @media only screen and (max-width: 1020px){
@@ -2114,6 +2169,12 @@ hr{
 /*   opacity: 1; */
 }
 
+/* #pilar1:hover{
+  transition: .9s;
+  transform: scale(1.1);
+  width: 35vw;
+} */
+
 .areas_background{
   width: auto;
   height: 100%;
@@ -2122,8 +2183,6 @@ hr{
   background-position: 50%;
   background-size: cover;
   background-repeat: no-repeat;
-  /*mask-image:image(url(https://ca.res.keymedia.com/files/image/iStock-group-person-happy-work.jpg), rgb(11, 99, 134)), linear-gradient(rgb(255, 255, 255), transparent);   flex: auto;*/
-  /*transition: opacity .2s ease-in;*/
   position: absolute;
 }
 
@@ -2178,7 +2237,8 @@ hr{
 
 .areas_text_box{
   z-index: 4;
-/*   min-width: 20vw; */
+  min-width: 20vw;
+  min-height: 27vh;
 /*   max-width: 400px; */
   text-align: center;
   flex-direction: column;
@@ -2189,7 +2249,9 @@ hr{
   padding-right: 14px;
   text-decoration: none;
   display: flex;
-  background-color: #ffffffb6;
+  background-color: var(--blancoPilares2);
+/*   opacity: 0.7; */
+  border-radius: 1%;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -2222,7 +2284,7 @@ hr{
 }
 
 section#pilares{
-  background-color: var(--blanco);
+  background-color: var(--grisPilares);
   min-height: 100vh;
   height: fit-content;
 /*   padding: 1px; */
@@ -2232,7 +2294,7 @@ section#pilares{
 #features-section {
 /*   margin-top: 100px;
   margin-bottom: 80px; */
-  background-color: var(--blanco);
+  background-color: var(--grisPilares);
   min-height: 100vh;
   margin: 0 auto;
 /*   transform: skewY(-1.5deg); */
