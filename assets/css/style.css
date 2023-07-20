@@ -2004,8 +2004,8 @@ hr{
     justify-content: center;
     align-items: center;
     display: flex;
-    margin-top: 70px;
-    margin-bottom: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
     padding-top: 0px;
   /*   background: radial-gradient(ellipse farthest-side at center, 
               rgba(24,28,37, 1) 50%, 
@@ -2144,7 +2144,7 @@ hr{
 
 @media only screen and (min-height: 1366px){
   .areas_full_item{
-/*     min-width: 20vw; */
+    min-width: 99vw;
     height: 20vh;
     background-color: var(--blanco);
     opacity: 1;
