@@ -2004,7 +2004,7 @@ hr{
     justify-content: center;
     align-items: center;
     display: flex;
-    margin-top: 0px;
+    margin-top: -50px;
     margin-bottom: 0px;
     padding-top: 0px;
   /*   background: radial-gradient(ellipse farthest-side at center, 
